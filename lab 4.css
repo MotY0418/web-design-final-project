@@ -1,0 +1,144 @@
+/* Updated to match SDG green theme */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #d0e7c5;
+  background-image: url('https://www.transparenttextures.com/patterns/pixel-weave.png');
+  color: #2e4a2a;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+.home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #6a994e;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #5e8c61;
+      transition: all 0.3s;
+      z-index: 10;
+    }
+	.home-btn:hover {
+      background-color: #386641;
+      transform: translateY(-2px);
+    }
+	
+.form-container {
+
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #f4ffe8;
+  border: 3px solid #5e8c61;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(46, 74, 42, 0.3);
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #386641;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #a2c48d;
+  padding-bottom: 10px;
+}
+
+h2, h3 {
+  color: #386641;
+  margin: 20px 0 10px 0;
+  font-weight: 600;
+}
+
+.pixel-input {
+  background-color: #e9edc9;
+  padding: 10px 15px;
+  border-left: 5px solid #6a994e;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid #a2c48d;
+}
+
+.pixel-divider {
+  border-top: 2px dashed #5e8c61;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.pixel-checkbox-group {
+  margin: 15px 0;
+  background-color: #e9edc9;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #a2c48d;
+}
+
+.pixel-checkbox-group.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pixel-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.pixel-checkbox:hover {
+  background-color: #d8e2c9;
+  border-radius: 4px;
+}
+
+.pixel-checkbox input {
+  margin-right: 10px;
+  accent-color: #6a994e;
+  transform: scale(1.2);
+}
+
+.form-footer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #386641;
+  font-size: 1.1em;
+  padding-top: 15px;
+  border-top: 2px solid #a2c48d;
+}
+
+/* Adding some SDG-themed decorative elements */
+.form-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: linear-gradient(to right, #6a994e, #386641);
+  border-radius: 10px 10px 0 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px 15px;
+  }
+  
+  h1 {
+    font-size: 1.5em;
+  }
+}

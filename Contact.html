@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | My Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- Theme Toggle Button -->
+<button class="theme-toggle" onclick="changeColor()">🌓</button>
+ 
+    
+<body>
+  <header>
+    <div class="container">
+      <h1>Contact Me</h1>
+      <nav>
+        <a href="IndexFinal.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Get in Touch</h2>
+      <form id="userForm">
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username" placeholder="Your name">
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your email">
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+
+      <p id="feedback"></p>
+
+      <div id="confirmation" style="display:none; margin-top: 20px;">
+        <p>Do you want to submit another response?</p>
+        <button onclick="submitAgain(true)">YES</button>
+        <button onclick="submitAgain(false)">NO</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+   <div class="footer-center">
+    <span id="current-time">10:23 PM</span>
+  </div>
+  <div class="footer-right">
+    <span id="current-date">11/07/2025</span>
+    <p>© 2025 My Website. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+ const scriptURL = "https://script.google.com/macros/s/AKfycbwyruOV-8qOe9XV_KtQdJnb7lWzg4Siui6jF15Bk24tX6iaMEWy71s8kKIjYWo_jHCW/exec";
+const form = document.getElementById("userForm");
+const feedbackMsg = document.getElementById("feedback");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  
+  // Create URL-encoded form data to match e.parameters
+  const formData = new URLSearchParams();
+  formData.append('name', document.getElementById("username").value);
+  formData.append('email', document.getElementById("email").value);
+  formData.append('message', document.getElementById("message").value);
+
+  fetch(scriptURL, {
+    method: "POST",
+    body: formData,
+    // No Content-Type header needed - URLSearchParams sets it automatically
+  })
+  .then(res => res.json())
+  .then(data => {
+    if (data.result === "success") {
+      feedbackMsg.textContent = "Message sent successfully!";
+      document.getElementById("confirmation").style.display = "block";
+    } else {
+      throw new Error(data.message || "Unknown server error");
+    }
+  })
+  .catch(error => {
+    feedbackMsg.textContent = "Error: " + error.message;
+  });
+});
+
+// Keep your existing submitAgain function unchanged
+function submitAgain(choice) {
+  const confirmationDiv = document.getElementById("confirmation");
+  confirmationDiv.style.display = "none";
+  
+  if (choice) {
+    form.reset();
+    feedbackMsg.textContent = "";
+  } else {
+    feedbackMsg.textContent = "Thank you!";
+  }
+}
+ </script>
+ <div id="retro-celebration" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.85); z-index:1000; font-family:'VT323', monospace;">
+  <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center;">
+    <div id="retro-message" style="font-size:3em; color:#0f0; text-shadow:0 0 10px #0f0; margin-bottom:30px; opacity:0;">
+      MESSAGE SENT SUCCESSFULLY!
+    </div>
+    <div id="retro-face" style="width:100px; height:100px; margin:0 auto; border-radius:50%; overflow:hidden; opacity:0;">
+      <!-- Replace with your image -->
+      <img src="Celebration photo.png" style="width:100%;" alt="Your Face">
+    </div>
+    <div id="retro-thanks" style="font-size:2em; color:#ff0; margin-top:30px; opacity:0;">
+      THANK YOU FOR REACHING OUT!!
+    </div>
+  </div>
+</div>
+</body>
+</html>

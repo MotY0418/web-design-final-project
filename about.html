@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | My Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" onclick="changeColor()">🌓</button>
+
+  <header>
+    <div class="container">
+      <h1>About Me</h1>
+      <nav>
+        <a href="IndexFinal.html">Home</a>
+        <a href="about.html" class="active">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card about-section">
+      <!-- Photo Section -->
+      <div class="profile-photo-container">
+        <img src="Pictureaboutme.jpg.jpg" alt="Adrean Santelices" class="profile-photo">
+        <div class="photo-border"></div> <!-- Optional pixel art border -->
+      </div>
+      
+      <!-- Text Content -->
+      <div class="about-content">
+        <h2>My Background</h2>
+        <p>Hello! I'm Adrean, a passionate developer and a good cook with a love for indie music and clean codes.</p>
+        <p>Know more about me on my resume below!.</p>
+        
+        <div class="resume-link">
+          <a href="Resume main.html" 
+             target="_blank" 
+             class="project-link">
+             View My Resume
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="footer-left">
+      <span>© <span id="year">2025</span> My Portfolio</span>
+    </div>
+    <div class="footer-center">
+      <span id="current-time">10:23 PM</span>
+    </div>
+    <div class="footer-right">
+      <span id="current-date">11/07/2025</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

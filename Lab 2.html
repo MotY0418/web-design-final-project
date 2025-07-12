@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainable Development Goal 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <style>
+    /* Retro-Pixel Theme CSS */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'VT323', monospace;
+      background-color: #d0e7c5;
+      background-image: url('https://www.transparenttextures.com/patterns/pixel-weave.png');
+      color: #2e4a2a;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background-color: #f4ffe8;
+      border: 3px solid #5e8c61;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(46, 74, 42, 0.3);
+      overflow: hidden;
+    }
+    .home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #6a994e;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #5e8c61;
+      transition: all 0.3s;
+      z-index: 10;
+    }
+	.home-btn:hover {
+      background-color: #386641;
+      transform: translateY(-2px);
+    }
+    /* Navigation */
+    .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #6a994e;
+      padding: 15px 0;
+      border-bottom: 3px solid #5e8c61;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 5px 15px;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    .nav-link:hover {
+      background-color: #386641;
+      border-color: #2e4a2a;
+      transform: translateY(-2px);
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #6a994e, #386641);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      border-bottom: 3px solid #5e8c61;
+      text-shadow: 2px 2px #2e4a2a;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.5rem;
+      color: #e9edc9;
+    }
+
+    /* Main Content */
+    .content-section {
+      padding: 25px;
+      border-bottom: 2px dashed #5e8c61;
+    }
+
+    .content-section:last-child {
+      border-bottom: none;
+    }
+
+    h2 {
+      color: #386641;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #a2c48d;
+      padding-bottom: 5px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      line-height: 1.6;
+    }
+
+    .highlight-box {
+      background-color: #e9edc9;
+      padding: 20px;
+      border-radius: 8px;
+      border: 2px solid #5e8c61;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.3rem;
+      text-align: center;
+      color: #386641;
+      margin: 30px 0;
+    }
+
+    .sdg-image {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      border: 3px solid #5e8c61;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    ul {
+      padding-left: 30px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #386641;
+      color: #f4ffe8;
+      text-align: center;
+      padding: 20px;
+      font-size: 1rem;
+      border-top: 3px solid #2e4a2a;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      
+      .nav-link {
+        width: 80%;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .subtitle {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<a href="projects.html" class="home-btn">← Home</a>
+
+
+
+  <div class="container">
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#goal" class="nav-link">Goal</a>
+      <a href="#targets" class="nav-link">Targets</a>
+      <a href="#importance" class="nav-link">Importance</a>
+      <a href="https://sdgs.un.org/goals/goal4" class="nav-link">Learn More</a>
+    </nav>
+
+    <!-- Header -->
+    <header>
+      <h1>Sustainable Development Goal 4</h1>
+      <p class="subtitle">Quality Education</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="content-section">
+        <div class="quote">
+          "Education is the most powerful weapon which you can use to change the world."<br>
+          - Nelson Mandela
+        </div>
+        
+        <img src="https://www.un.org/sustainabledevelopment/wp-content/uploads/2019/08/E-Inverted-Icons_WEB-04-1024x1024.png" alt="SDG 4 Icon" class="sdg-image">
+      </section>
+
+      <section id="goal" class="content-section">
+        <h2>Goal 4: Quality Education</h2>
+        <div class="highlight-box">
+          <p>Sustainable Development Goal 4 aims to <strong>ensure inclusive and equitable quality education</strong> and promote lifelong learning opportunities for all.</p>
+          <p>This goal recognizes that education is essential for escaping poverty, improving health outcomes, achieving gender equality, and fostering peaceful societies.</p>
+        </div>
+      </section>
+
+      <section id="targets" class="content-section">
+        <h2>Key Targets</h2>
+        <div class="highlight-box">
+          <ul>
+            <li>Ensure all children complete free, equitable primary and secondary education</li>
+            <li>Provide equal access to affordable vocational training</li>
+            <li>Eliminate gender disparities in education</li>
+            <li>Ensure universal literacy and numeracy</li>
+            <li>Build and upgrade inclusive schools</li>
+            <li>Substantially increase the supply of qualified teachers</li>
+            <li>Expand global scholarships for developing countries</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="importance" class="content-section">
+        <h2>Why It Matters</h2>
+        <div class="highlight-box">
+          <p><strong>Education transforms lives</strong> and is at the heart of the UN's Sustainable Development Goals:</p>
+          <ul>
+            <li>Reduces poverty (SDG 1)</li>
+            <li>Improves health outcomes (SDG 3)</li>
+            <li>Promotes gender equality (SDG 5)</li>
+            <li>Fosters economic growth (SDG 8)</li>
+            <li>Reduces inequalities (SDG 10)</li>
+            <li>Promotes peaceful societies (SDG 16)</li>
+          </ul>
+          <p>Despite progress, <strong>258 million children and youth</strong> were out of school in 2018, and <strong>773 million adults</strong> remain illiterate.</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 SDG Awareness Project | Quality Education for All</p>
+    </footer>
+  </div>
+</body>
+</html>

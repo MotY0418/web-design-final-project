@@ -1,0 +1,118 @@
+/* styles.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #d0e7c5;
+  color: #2e4a2a;
+  line-height: 1.6;
+  background-image: url('https://www.transparenttextures.com/patterns/pixel-weave.png');
+}
+
+
+.home-btn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #6a994e;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      border: 2px solid #5e8c61;
+      transition: all 0.3s;
+      z-index: 10;
+    }
+	.home-btn:hover {
+      background-color: #386641;
+      transform: translateY(-2px);
+    }
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #f4ffe8;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(46, 74, 42, 0.3);
+  border: 2px solid #a2c48d;
+}
+
+.left-panel,
+.right-panel {
+  padding: 2rem;
+  flex: 1 1 300px;
+}
+
+.left-panel {
+  background-color: #e7f3d7;
+  border-right: 2px solid #a2c48d;
+}
+
+.right-panel {
+  background-color: #9dc183;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-shadow: 1px 1px #4f7449;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin: 1.5rem 0 0.5rem;
+  color: inherit;
+  font-weight: bold;
+}
+
+.profile-pic {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.profile-pic img {
+  width: 160px;
+  height: 160px;
+  border-radius: 4px;
+  object-fit: cover;
+  border: 4px solid #5e8c61;
+  image-rendering: pixelated;
+}
+
+.section ul {
+  list-style: square;
+  margin-left: 1.5rem;
+}
+
+.section p,
+.section li {
+  margin-bottom: 0.5rem;
+}
+
+.right-panel h2 {
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.3rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
+

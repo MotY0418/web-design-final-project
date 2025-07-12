@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN SDG's Registration Form</title>
+    <link rel="stylesheet" href="lab 4.css">
+    <meta name="description" content="Register your interest in United Nations Sustainable Development Goals">
+</head>
+<body>
+<a href="projects.html" class="home-btn">← Home</a>
+    <div class="full-screen-container">
+        <div class="form-container">
+            <header class="form-header">
+                <h1 class="heading">UN SDGs Registration</h1>
+                <p class="subheading">Join the global movement for sustainable development</p>
+            </header>
+            
+            <form class="registration-form" id="sdg-registration">
+                <!-- Personal Information Section -->
+                <fieldset class="form-section">
+                    <legend class="section-title">Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" id="fullname" name="fullname" required 
+                               placeholder="Your full name" aria-required="true">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required 
+                               placeholder="your.email@example.com" aria-required="true">
+                    </div>
+                   
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" min="13" required 
+                               placeholder="18+" aria-required="true">
+                    </div>
+                </fieldset>
+
+                <!-- Gender Identity Section -->
+                <fieldset class="form-section">
+                    <legend class="section-title">Gender Identity</legend>
+                    <div class="radio-grid">
+                        <div class="radio-option">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="gay" name="gender" value="gay">
+                            <label for="gay">Gay</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="lesbian" name="gender" value="lesbian">
+                            <label for="lesbian">Lesbian</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="transgender" name="gender" value="transgender">
+                            <label for="transgender">Transgender</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="non-binary" name="gender" value="non-binary">
+                            <label for="non-binary">Non-binary</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="gender-neutral" name="gender" value="gender-neutral">
+                            <label for="gender-neutral">Gender neutral</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="prefer-not-to-say" name="gender" value="prefer-not-to-say">
+                            <label for="prefer-not-to-say">Prefer not to say</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- SDG Interests Section -->
+                <fieldset class="form-section">
+                    <legend class="section-title">SDG(s) of Interest <span class="hint">(Select all that apply)</span></legend>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg1" name="sdg" value="no-poverty">
+                            <label for="sdg1"><span class="sdg-number">1</span> No Poverty</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg2" name="sdg" value="zero-hunger">
+                            <label for="sdg2"><span class="sdg-number">2</span> Zero Hunger</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg3" name="sdg" value="good-health">
+                            <label for="sdg3"><span class="sdg-number">3</span> Good Health</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg4" name="sdg" value="quality-education">
+                            <label for="sdg4"><span class="sdg-number">4</span> Quality Education</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg5" name="sdg" value="gender-equality">
+                            <label for="sdg5"><span class="sdg-number">5</span> Gender Equality</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg6" name="sdg" value="clean-water">
+                            <label for="sdg6"><span class="sdg-number">6</span> Clean Water</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg7" name="sdg" value="clean-energy">
+                            <label for="sdg7"><span class="sdg-number">7</span> Clean Energy</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg8" name="sdg" value="decent-work">
+                            <label for="sdg8"><span class="sdg-number">8</span> Decent Work</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg9" name="sdg" value="innovation">
+                            <label for="sdg9"><span class="sdg-number">9</span> Innovation</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg10" name="sdg" value="reduced-inequalities">
+                            <label for="sdg10"><span class="sdg-number">10</span> Reduced Inequalities</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg11" name="sdg" value="sustainable-cities">
+                            <label for="sdg11"><span class="sdg-number">11</span> Sustainable Cities</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg12" name="sdg" value="responsible-consumption">
+                            <label for="sdg12"><span class="sdg-number">12</span> Responsible Consumption</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg13" name="sdg" value="climate-action">
+                            <label for="sdg13"><span class="sdg-number">13</span> Climate Action</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg14" name="sdg" value="life-below-water">
+                            <label for="sdg14"><span class="sdg-number">14</span> Life Below Water</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg15" name="sdg" value="life-on-land">
+                            <label for="sdg15"><span class="sdg-number">15</span> Life on Land</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg16" name="sdg" value="peace-justice">
+                            <label for="sdg16"><span class="sdg-number">16</span> Peace & Justice</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="sdg17" name="sdg" value="partnerships">
+                            <label for="sdg17"><span class="sdg-number">17</span> Partnerships</label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-submit">
+                        <span class="btn-text">Submit Registration</span>
+                        <span class="btn-icon" aria-hidden="true">→</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
